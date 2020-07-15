@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android" id="outsystems-urbanairship-plugin-wrapper" version="1.0.0">
+
+    <name>OutSystems Urban Airship Plugin Wrapper</name>
+    <description>OutSystems Urban Airship Plugin Wrapper</description>
+    <license></license>
+    <keywords></keywords>
+
+    <!-- <dependency id="urbanairship-cordova" url="." subdir="urbanairship-cordova-7.3.1"/> -->
+    <!-- Android -->
+
+   <!--  <hook src="hooks/install_prerequisites.js" type="before_plugin_install"/>
+    <hook src="hooks/handle_google_services.js" type="before_plugin_install"/>
+    <hook src="hooks/google_services_cleanup.js" type="after_plugin_install"/> -->
+
+    <engines>
+        <engine name="cordova" version=">=7.1.0"/>
+        <engine name="cordova-android" version=">=6.4.0"/>
+    </engines>
+
+    <platform name="android">
+        <dependency id="urbanairship-cordova" url="https://github.com/OutsystemsExperts/urbanairship-cordova.git#7.6.0-OS"/>
+        <hook src="hooks/install_prerequisites.js" type="before_plugin_install"/>
+        <hook src="hooks/skip_google_services_hook.js" type="before_plugin_install"/>
+        <hook src="hooks/handle_google_services.js" type="before_plugin_install"/>
+        <hook src="hooks/google_services_cleanup.js" type="after_plugin_install"/>
+    </platform>
+
+    <!-- iOS -->
+    <platform name="ios">
+        <dependency id="urbanairship-cordova@7.6.0"/>
+        <hook src="hooks/retrieve_latest_airship_iOS_SDK.js" type="before_plugin_install">
+    </platform>
+
+</plugin>

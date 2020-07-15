@@ -1,0 +1,19 @@
+{
+  "name": "outsystems-urbanairship-plugin-wrapper",
+  "version": "1.0.0",
+  "description": "OutSystems Urban Airship Plugin Wrapper",
+  "cordova": {
+    "id": "outsystems-urbanairship-plugin-wrapper",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}
