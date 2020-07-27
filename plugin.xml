@@ -29,8 +29,8 @@
 
     <!-- iOS -->
     <platform name="ios">
-        <dependency id="urbanairship-cordova@7.6.0"/>
-        <hook src="hooks/retrieve_latest_airship_iOS_SDK.js" type="before_plugin_install">
+        <dependency id="urbanairship-cordova" url="https://github.com/premedios/urbanairship-cordova.git#outsystems"/>
+        
     </platform>
 
 </plugin>
