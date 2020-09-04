@@ -29,7 +29,7 @@
 
     <!-- iOS -->
     <platform name="ios">
-        <dependency id="urbanairship-cordova" url="https://github.com/premedios/urbanairship-cordova.git#MOBILE-633"/>
+        <dependency id="urbanairship-cordova" url="https://github.com/premedios/urbanairship-cordova.git#MOBILE-648"/>
         
     </platform>
 
