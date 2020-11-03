@@ -20,6 +20,7 @@
     </engines>
 
     <platform name="android">
+        <dependency id="cordova-androidx-build" url="https://github.com/cmfsotelo/cordova-androidx-build.git#outsystems-compat"/>
         <dependency id="urbanairship-cordova" url="https://github.com/premedios/urbanairship-cordova.git"/>
         <hook src="hooks/install_prerequisites.js" type="before_plugin_install"/>
         <hook src="hooks/skip_google_services_hook.js" type="before_plugin_install"/>
