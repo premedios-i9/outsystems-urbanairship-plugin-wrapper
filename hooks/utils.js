@@ -1,7 +1,7 @@
 var path = require("path");
 var fs = require("fs");
 var et = require("elementtree");
-var plist = require('plist');
+//var plist = require('plist');
 
 /**
  * Get the platform version for the current execution
@@ -323,6 +323,7 @@ function updateAndroidManifest (targetFile, configItems) {
    module to convert the data to a map.  The config.xml data is then replaced or appended to the original plist file
  */
 function updateIosPlist (targetFile, configItems) {
+    var plist = require("plist");
     const infoPlist = plist.parse(fs.readFileSync(targetFile, 'utf-8'));
     let tempInfoPlist;
 
